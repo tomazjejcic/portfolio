@@ -1,0 +1,20 @@
+html {
+    background-color: black;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    color: white;
+}
+
+.container {
+    position: absolute; 
+    min-width: 100%; 
+    min-height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
