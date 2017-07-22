@@ -9,10 +9,11 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/,
+                test: /\.scss$/,
                 use: [
                     "style-loader", // needs to be first
-                    "css-loader" // needs to be second
+                    "css-loader", // needs to be second
+                    "sass-loader" // needs to be second
                 ]
             }
         ]

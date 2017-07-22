@@ -1,6 +1,6 @@
 // entry point
 
 import { myComponent } from './module-1.js';
-import '../css/style.css';
+import '../style/style.scss';
 
 console.log(myComponent); 
