@@ -1,6 +1,15 @@
 // entry point
 
 import { myComponent } from './module-1.js';
-import '../style/style.scss';
+import '../style/styles.css';
+import 'jquery';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+// import '../style/style.scss';
 
-console.log(myComponent); 
+console.log('the compo', myComponent); 
+
+$(function () {
+    console.log('jquery works');
+});
+
