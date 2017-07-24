@@ -1,27 +1,24 @@
-// html {
-//     background-color: black;
-// }
+body {
+    margin: 0;
+    background: black;
+}
 
-// body {
-//     margin: 0;
-// }
+h1 {
+    color: white;
+}
 
-// h1 {
-//     color: white;
-// }
+.content-container {
+    position: absolute; 
+    min-width: 100%; 
+    min-height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-// .container {
-//     position: absolute; 
-//     min-width: 100%; 
-//     min-height: 100%; 
-//     display: flex; 
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
+    .sub-container {
+        position: relative;
+        color: darkgrey;
+    }
+}
     
-//     .sub-container {
-//         position: relative;
-//         color: darkgrey;
-//     }
-// }
-
