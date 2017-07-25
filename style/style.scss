@@ -1,14 +1,4 @@
-// $font-primary: 'Trebuchet MS';
-
-$color-background:     #6D6E64;
-$color-block:     #2D2D2D;
-$color-txt-primary:     #61E786;
-$color-txt-hoover:     #D2E52A;
-
-//   --color-thumbnail: #5A5B52;
-//   --color-white: #BCBDB9;
-  
-//   --font: Monaco;
+@import "./variables.scss";
 
 body {
     margin: 0;
@@ -18,57 +8,6 @@ body {
 h1 {
     color: white;
 }
-
-////// NAVBAR //////
-
-.navbar-default {
-    background: $color-block;
-    border-color: $color-block;
-
-    .navbar-toggle {
-        border-color: $color-txt-primary;
-
-        .icon-bar {
-            background-color: $color-txt-primary;
-        }
-    }
-
-    .navbar-brand {
-        color: $color-txt-primary;
-    }
-
-    .navbar-nav > li > a {
-        color: $color-txt-primary;
-    }
-
-    .navbar-nav > li .header-button {
-        float: right;
-        margin: 0 10px;
-        padding: 0 12px;
-        width: 100px;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        height: 60px;
-        overflow: hidden;
-        transform: skew(-20deg);
-        border-left: 1px solid $color-txt-primary;
-        color:  $color-txt-primary;
-        font-size: 15px;
-        font-family: arial;
-
-        .button-unskew {
-            display: inline-block;
-            transform: skew(20deg);
-        }
-    }
-
-    .navbar-nav > li .header-button:hover {
-            border-left: 3px solid $color-txt-hoover;
-            color: $color-txt-hoover;
-    }
-}
-////// NAVBAR END //////
 
 .content-container {
     position: absolute; 

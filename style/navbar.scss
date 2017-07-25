@@ -1,0 +1,94 @@
+////// NAVBAR STYLING //////
+
+@import "./variables.scss";
+
+.navbar-default {
+    background: $color-block;
+    border-color: $color-block;
+    border-radius: 0px;
+
+    .navbar-collapse {
+        border-color: $color-background;
+    }
+
+    .navbar-toggle {
+        border-color: $color-txt-primary;
+
+        .icon-bar {
+            background-color: $color-txt-primary;
+        }
+    }
+
+    .navbar-toggle:hover {
+        background: transparent;
+        border-color: $color-txt-hoover;
+
+        & .icon-bar {
+           background: $color-txt-hoover;
+        }
+    }
+
+    .navbar-toggle:focus {
+        background: transparent;
+    }
+
+    .navbar-brand {
+        color: $color-txt-primary;
+        line-height: 30px;
+        font-size: 26px;
+    }
+
+    .navbar-brand:hover {
+        color: $color-txt-primary;
+    }
+
+    .navbar-nav > li > a {
+        color: $color-txt-primary;
+    }
+
+    .navbar-nav > li .header-button {
+        float: right;
+        margin: 0 10px;
+        padding: 0 12px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        height: 60px;
+        overflow: hidden;
+        transform: skew(-20deg);
+        border-left: 1px solid $color-txt-primary;
+        color:  $color-txt-primary;
+        font-size: 15px;
+        font-family: arial;
+
+        .button-unskew {
+            display: inline-block;
+            transform: skew(20deg);
+        }
+    }
+
+    .navbar-nav > li .header-button:hover {
+            border-left: 3px solid $color-txt-hoover;
+            color: $color-txt-hoover;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-default {
+       .navbar-brand {
+            color: $color-txt-primary;
+            line-height: 20px;
+            font-size: 26px;
+        }
+
+        .navbar-nav > li .header-button {
+            border-left: 0px;
+        }
+
+        .navbar-nav > li .header-button:hover {
+            border-left: 0px;
+            color: $color-txt-hoover;
+        }
+    }
+}
