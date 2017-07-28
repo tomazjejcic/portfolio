@@ -9,6 +9,12 @@ import '../style/navbar.scss';
 
 console.log('the compo', myComponent); 
 
-$(function () {
+$(document).ready(function() {
     console.log('jquery works');
+
+    $("#home-button").click( function() {
+    
+    console.log('HOME works');
+    
+    });
 });

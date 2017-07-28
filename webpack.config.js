@@ -11,7 +11,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/,
+                test: /\.woff2?$|\.ttf$|\.eps$|\.eot$|\.otf$|\.svg$/,
                 use: [{
                     loader: "file-loader"
                 }]

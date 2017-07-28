@@ -3,8 +3,8 @@
 @import "./variables.scss";
 
 .navbar-default {
-    background: $color-block;
-    border-color: $color-block;
+    background: $color-black;
+    border-color: $color-black;
     border-radius: 0px;
 
     .navbar-collapse {
@@ -71,6 +71,14 @@
     .navbar-nav > li .header-button:hover {
             border-left: 3px solid $color-txt-hoover;
             color: $color-txt-hoover;
+    }
+}
+
+@media (max-width: 364px) {
+    
+    .navbar-default .navbar-nav > li .header-button {
+        float: none;
+
     }
 }
 

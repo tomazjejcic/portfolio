@@ -9,7 +9,9 @@
         
         <!-- Stylesheets -->
         <!-- <link rel="stylesheet" type="text/css" href="style/styles.css">   -->
-        <link rel="stylesheet" type="text/css" href="./build/bundle.styles.css">
+        <!-- <link rel="stylesheet" type="text/css" href="./build/bundle.styles.css"> -->
+
+        <link rel="stylesheet" type="text/css" href="./node_modules/font-awesome/css/font-awesome.css">
 
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <!-- <link href="//getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
@@ -47,27 +49,126 @@
                                 <div class="button-unskew">Contact</div>
                             </div>
                         </li>
-                        <!-- <li><a href="./">Home <span class="sr-only">(current)</span></a></li>
-                        <li><a href="../navbar-static-top/">Portfolio</a></li>
-                        <li><a href="../navbar-fixed-top/">Contact</a></li> -->
                     </ul>
                 </div><!--/.nav-collapse -->
                 </div><!--/.container-fluid -->
             </nav>
         </header>
 
-        <div class="content-container">
-            <div>
-                <h1>
-                    Coming soon
-                </h1>
-            </div>
+        <main id='content'>
+     
+            <div id="home-section" class="home">
+                <div class="container">
+                    <div class="col-xs-12 col-md-6 home-tags">
+                         <img src="./src/assets/portfolio_tags.png"> 
+                        <!-- <div>left test</div> -->
+                    </div>
+                    <div class="col-xs-12 col-md-6 home-skills">
+                        <div>
+                            JavaScript, HTML, CSS,<br />
+                            Angular, Ionic, SASS,<br />
+                            Highcharts, Bootstrap,<br />
+                            Git, NPM, Webpack
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /#home-section -->
 
-            <div class="sub-container">
-                but no need to wait here ;)
-            </div>
+            <div id="portfolio-section" class="portfolio">
 
-        </div>
+                <div class="title">
+                    Portfolio
+                </div>
+
+                <div class="container">
+                    <div class="col-xs-12 col-md-6 portfolio-project-container">
+                        <img src="./src/assets/srecko.png">
+                    </div>
+                    <div class="col-xs-12 col-md-6 portfolio-project-container">
+                        <div class="port-cont">
+                            <txtarea>Comming soon</txtarea>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6 portfolio-project-container">
+                        <div class="port-cont">
+                            Comming soon
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 portfolio-project-container">
+                        <div class="port-cont">
+                            Comming soon
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6 portfolio-project-container">
+                        <div class="port-cont">
+                            Comming soon
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 portfolio-project-container">
+                        <div class="port-cont">
+                            Comming soon
+                        </div>
+                    </div>
+                </div> <!-- /.container -->
+            </div> <!-- /#portfolio-section -->
+
+            <div id="contact-section" class="contact">
+                <div class="title">
+                    Contact
+                </div>
+
+                <div class="container"> 
+                    
+                    <div class="col-xs-12 col-md-6 contact-project-container"> 
+                        <div class="form-container">
+                            <fieldset class="form-style">
+                                <label>
+                                    Name:
+                                    <input type="text" name="name"  maxlength="100" class="form-input">
+                                </label>
+                                <label>
+                                    Email:
+                                    <input type="email" name="email" size="30" maxlength="100" class="form-input">
+                                </label>
+                                <label for="comments">
+                                    Comments:
+                                    <textarea rows="4" cols="40" id="comments" class="form-input"></textarea>
+                                </label>
+                                <br />
+                                <input type="submit" value="Submit" class="form-submit" />
+                            </fieldset>
+                        </div><!--  /.form-container --> 
+                    </div>  
+
+                    <div class="col-xs-12 col-md-6 contact-project-container-second">
+                        <div class="grid-wrapper">
+                            <div class="one centered">
+                                     <a href="#" class="circle"><i class="fa fa-github"></i></a> 
+                            </div>
+                            <div class="two centered">
+                                 <a href="#" class="circle"><i class="fa fa-linkedin"></i></a> 
+                            </div>
+                            <div class="three centered">
+                                	<a href="#" class="circle"><i class="fa fa-twitter"></i></a>
+                            </div>
+                            <div class="four centered">
+                                  <a href="#" class="circle"><i class="fa fa-instagram"></i></a> 
+                            </div>
+                        </div>
+                    </div> 
+                    
+                </div><!--  /.container --> 
+            </div><!-- /#contact-section -->
+
+        </main><!-- /.main -->
+
+        <footer>
+            <div class="disclaimer">
+                <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> &nbsp;&nbsp;|&nbsp;&nbsp; Tomaz Jejcic</p>
+            </div>
+        </footer>
 
         <!-- JavaScript
         ================================================== -->
