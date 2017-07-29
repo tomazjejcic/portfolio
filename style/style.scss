@@ -1,8 +1,9 @@
 @import "./variables.scss";
 
 body {
-    margin: 0;
+    margin: auto;
     background: $color-background;
+    // max-width: 1080px;
 }
 
 img {
@@ -11,16 +12,19 @@ img {
 
 .title {
     color: $color-txt-primary;
+    border-top: 1px solid $color-black;
     display: flex;
     justify-content: center;
     font-size: 1.8em;
-    padding: 15px 0 20px 0;
+    padding: 15px 0 0px 0;
 }
 
 .home {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 20px 0 20px 0;
+    // background: $color-thumbnail;
 
     .home-tags {
         text-align: center;
@@ -31,18 +35,20 @@ img {
         font-size: 1.6em;
         text-align: center;
         color: $color-txt-lightgray;
-        padding-bottom: 15px;
     }
 }
 
 .portfolio {
     margin: 15px 0 30px 0;
 
-    .portfolio-project-container + .portfolio-project-container {
+    .portfolio-project-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding-top: 30px;
     }
 
-    .port-cont {
+    .portfolio-placeholder {
         background: $color-thumbnail;
         color: $color-txt-lightgray;
         // calculated from srecko
@@ -57,36 +63,43 @@ img {
 .contact {
     width: 100%;
     background: $color-black;
+
+    .contact-project-container {
+        
+        padding-top: 30px;
     
-    .form-container {
-        // flex: 1;
-        .form-style {
-            color: $color-txt-primary;
-            // font-family: var(--font);
-            .form-input {
-                background-color: $color-txt-lightgray;
-                border: solid 1px #6E6E6E;
-                color: $color-black;
-                width: 100%;
-            }
+        .form-container {
+            width: 260px;
+            margin: auto;
 
-            label {
-                width: 100%;
-                padding-bottom: 10px;
-                
-            }
+            .form-style {
+                color: $color-txt-primary;
+                // font-family: var(--font);
+                .form-input {
+                    background-color: $color-txt-lightgray;
+                    border: solid 1px #6E6E6E;
+                    color: $color-black;
+                    width: 100%;
+                }
 
-            .form-submit {
-                border: solid 1px #61E786;
-                border-radius: 5px;
-                background-color: $color-txt-primary;
-                color: $color-black;
-                padding: 5px 15px;
-            }
+                label {
+                    width: 100%;
+                    padding-bottom: 10px;
+                    
+                }
 
-            .form-submit:hover {
-                border: solid 1px $color-txt-hoover;
-                background: $color-txt-hoover;
+                .form-submit {
+                    border: solid 1px #61E786;
+                    border-radius: 5px;
+                    background-color: $color-txt-primary;
+                    color: $color-black;
+                    padding: 5px 15px;
+                }
+
+                .form-submit:hover {
+                    border: solid 1px $color-txt-hoover;
+                    background: $color-txt-hoover;
+                }
             }
         }
     }
@@ -97,8 +110,9 @@ img {
         .grid-wrapper {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
             grid-auto-rows: minmax(100px, auto);
+            grid-row-gap: 40px;
+            grid-column-gap: 0px;
 
             .one {
                 grid-column: 1 / 2;
@@ -158,7 +172,6 @@ img {
                 background: $color-txt-primary; 
                 position: relative;
                 display: inline-block;
-                margin: 0 10px 10px 0;
                 padding: 0;
                 overflow: hidden;
                 // float: left;
@@ -192,5 +205,152 @@ footer {
         margin-top: 10px;
         display: flex;
         justify-content: center;
+    }
+}
+
+@media(min-width:321px) {
+
+    .contact-project-container {
+        padding: 30px 30px 0 30px;
+    }
+}
+
+@media(min-width:768px) {
+
+    img {
+        max-width: 560px;
+    }
+
+    .title {
+        font-size: 4.8em;
+    }
+
+    .home {
+        .home-tags {
+            margin: 50px 0 50px 0;
+        }
+        .home-skills {
+            font-size: 3.6em;
+            margin: 50px 0 50px 0;
+        }
+    }
+
+    .portfolio {
+        margin: 25px 0 60px 0;
+
+        .portfolio-project-container {
+            padding: 30px 0 30px 0;
+        }
+        
+        .portfolio-placeholder {
+            width: 560px;
+            height: 389px;
+            font-size: 1.6em;
+        }
+    }
+
+    .contact {
+
+        .contact-project-container {
+
+            .form-container {
+                width: 560px;
+            }
+        }
+
+        .contact-project-container-second {
+            padding: 100px 20px 50px 20px;
+
+            .grid-wrapper {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
+@media(min-width:993px) {
+
+    img {
+        max-width: 360px;
+    }
+
+    .title {
+        font-size: 3.8em;
+        margin-bottom: 20px;
+    }
+
+    .home {
+        padding: 50px 0 30px 0;
+
+        .home-skills {
+            font-size: 1.6em;
+        }
+    }
+
+    .portfolio {
+
+        .portfolio-project-twin + .portfolio-project-twin {
+            padding-top: 40px;
+        }
+        
+        .portfolio-placeholder {
+            width: 360px;
+            height: 256px;
+            font-size: 1.2em;
+        }
+    }
+
+    .contact {
+        padding-bottom: 100px;
+
+        .container {
+            display: flex;
+            align-items: center;
+
+            .contact-project-container {
+
+                .form-container {
+                    width: 360px;
+                }
+            }
+
+            .contact-project-container-second {
+                padding: 0;
+
+                .grid-wrapper {
+                    display: grid;
+                    padding: 0 100px 0 100px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .home {
+
+        .container {
+            width: 970px;
+        }
+    }
+
+    .portfolio {
+
+        .portfolio-project-twin {
+
+            .container {
+                width: 970px;
+            }
+
+        }
+    }
+
+    .contact {
+
+        .container {
+            width: 970px;
+        }
     }
 }

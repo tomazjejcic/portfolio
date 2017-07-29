@@ -7,6 +7,10 @@
     border-color: $color-black;
     border-radius: 0px;
 
+    .container-fluid {
+        max-width: 1080px;
+    }
+
     .navbar-collapse {
         border-color: $color-background;
     }
