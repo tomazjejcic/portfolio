@@ -1,23 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
 
         <title>TomoJ</title>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- Stylesheets -->
-        <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+        <!-- <link rel="stylesheet" type="text/css" href="style/styles.css">   -->
+        <!-- <link rel="stylesheet" type="text/css" href="./build/bundle.styles.css"> -->
+
+        <link rel="stylesheet" type="text/css" href="./node_modules/font-awesome/css/font-awesome.css">
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <!-- <link href="//getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
 
     </head>
 
-    <body style="background: black; margin: 0">
+    <body>
+        <header>
+        <!-- Static navbar -->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand">TomoJ</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <div id="home-button" class="header-button">
+                                <div class="button-unskew">Home</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="portfolio-button" class="header-button">
+                                <div class="button-unskew">Portfolio</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="contact-button" class="header-button">
+                                <div class="button-unskew">Contact</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+                </div><!--/.container-fluid -->
+            </nav>
+        </header>
 
-        <div style="position: absolute; min-width: 100%; min-height: 100%; display: flex; justify-content: center; align-items: center">
-            <h1 style="color: white">
-                Coming soon
-            </h1>
-        </div>
+        <main id='content'>
+     
+            <div id="home-section" class="home">
+                <div class="container">
+                    <div class="col-xs-12 col-md-6 home-tags">
+                         <img src="./src/assets/portfolio_tags.png"> 
+                        <!-- <div>left test</div> -->
+                    </div>
+                    <div class="col-xs-12 col-md-6 home-skills">
+                        <p>
+                            JavaScript HTML CSS<br />
+                            Angular Ionic SASS<br />
+                            Highcharts Bootstrap<br />
+                            Git NPM Webpack
+                        </p>
+                    </div>
+                </div>
+            </div><!-- /#home-section -->
+
+            <div id="portfolio-section" class="portfolio">
+
+                <div class="title">
+                    Portfolio
+                </div>
+
+                <div class="portfolio-project-twin">
+                    <div class="container">
+                        <div class="col-xs-12 col-md-6 portfolio-project-container">
+                            <a href="https://codepen.io/TomoJ/full/ORXEoL/">
+                                <img src="./src/assets/srecko.png" alt="Srecko Kosovel tribute page">
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-md-6 portfolio-project-container">
+                            <div class="portfolio-placeholder">
+                                <txtarea>Coming soon</txtarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-project-twin">
+                    <div class="container">
+                        <div class="col-xs-12 col-md-6 portfolio-project-container">
+                            <div class="portfolio-placeholder">
+                                Coming soon
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 portfolio-project-container">
+                            <div class="portfolio-placeholder">
+                                Coming soon
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-project-twin">
+                    <div class="container">
+                        <div class="col-xs-12 col-md-6 portfolio-project-container">
+                            <div class="portfolio-placeholder">
+                                Coming soon
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 portfolio-project-container">
+                            <div class="portfolio-placeholder">
+                                Coming soon
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /#portfolio-section -->
+
+            <div id="contact-section" class="contact">
+                <div class="title">
+                    Contact
+                </div>
+
+                <div class="container"> 
+                    
+                    <div class="col-xs-12 col-md-6 contact-project-container"> 
+                        <div class="form-container">
+                            <fieldset class="form-style">
+                                <form action="https://formspree.io/tomovment@gmail.com" method="POST">
+                                <label>
+                                    Name:
+                                    <input type="text" name="name"  maxlength="100" class="form-input">
+                                </label>
+                                <label>
+                                    Email:
+                                    <input type="email" name="_replyto" size="30" maxlength="100" class="form-input">
+                                </label>
+                                <label for="comments">
+                                    Comments:
+                                    <textarea rows="4" cols="40" id="comments" name="content" class="form-input"></textarea>
+                                </label>
+                                <br />
+                                <input type="submit" value="Submit" class="form-submit" />
+                                </form>
+                            </fieldset>
+                        </div><!--  /.form-container --> 
+                    </div>  
+
+                    <div class="col-xs-12 col-md-6 contact-project-container-second">
+                        <div class="grid-wrapper">
+                            <div class="one centered">
+                                     <a href="https://github.com/tomazjejcic" class="circle"><i class="fa fa-github"></i></a> 
+                            </div>
+                            <div class="two centered">
+                                 <a href="https://www.linkedin.com/in/tomaz-jejcic-680593126/" class="circle"><i class="fa fa-linkedin"></i></a> 
+                            </div>
+                            <div class="three centered">
+                                	<a href="https://twitter.com/JejTo" class="circle"><i class="fa fa-twitter"></i></a>
+                            </div>
+                            <div class="four centered">
+                                  <a href="https://www.instagram.com/tomazjejcic/" class="circle"><i class="fa fa-instagram"></i></a> 
+                            </div>
+                        </div>
+                    </div> 
+                    
+                </div><!--  /.container --> 
+            </div><!-- /#contact-section -->
+
+        </main><!-- /.main -->
+
+        <footer>
+            <div class="disclaimer">
+                <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> &nbsp;&nbsp;|&nbsp;&nbsp; Tomaz Jejcic</p>
+            </div>
+        </footer>
+
+        <!-- JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="./build/bundle.js"></script>
 
     </body>
 </html>
