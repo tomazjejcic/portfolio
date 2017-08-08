@@ -1,6 +1,5 @@
 // entry point
 
-import { myComponent } from './module-1.js';
 import 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -10,11 +9,23 @@ import '../style/navbar.scss';
 console.log('the compo', myComponent); 
 
 $(document).ready(function() {
-    console.log('jquery works');
 
     $("#home-button").click( function() {
-    
-    console.log('HOME works');
-    
+        $('html, body').animate({
+            scrollTop: $("#home-section").offset().top
+        }, 500);
     });
+
+    $("#portfolio-button").click( function() {
+        $('html, body').animate({
+            scrollTop: $("#portfolio-section").offset().top
+        }, 500);
+    });
+
+    $("#contact-button").click( function() {
+        $('html, body').animate({
+            scrollTop: $("#contact-section").offset().top
+        }, 500);
+    });
+
 });
