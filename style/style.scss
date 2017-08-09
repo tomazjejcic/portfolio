@@ -46,6 +46,14 @@ img {
         justify-content: center;
         align-items: center;
         padding-top: 30px;
+
+        .project-link {
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); 
+        }
+
+        .project-link:hover {
+            box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.2); 
+        }
     }
 
     .portfolio-placeholder {
