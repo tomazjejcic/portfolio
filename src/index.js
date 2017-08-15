@@ -8,24 +8,23 @@ import '../style/navbar.scss';
 
 $(document).ready(function() {
 
-    $('#myForm').validator()
-
     $("#home-button").click( function() {
         $('html, body').animate({
             scrollTop: $("#home-section").offset().top
         }, 500);
     });
-
+    
     $("#portfolio-button").click( function() {
         $('html, body').animate({
             scrollTop: $("#portfolio-section").offset().top
         }, 500);
     });
-
+    
     $("#contact-button").click( function() {
         $('html, body').animate({
             scrollTop: $("#contact-section").offset().top
         }, 500);
     });
-
+    
+    $('#myForm').validator()
 });

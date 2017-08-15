@@ -10796,26 +10796,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 $(document).ready(function() {
 
-    $('#myForm').validator()
-
     $("#home-button").click( function() {
         $('html, body').animate({
             scrollTop: $("#home-section").offset().top
         }, 500);
     });
-
+    
     $("#portfolio-button").click( function() {
         $('html, body').animate({
             scrollTop: $("#portfolio-section").offset().top
         }, 500);
     });
-
+    
     $("#contact-button").click( function() {
         $('html, body').animate({
             scrollTop: $("#contact-section").offset().top
         }, 500);
     });
-
+    
+    $('#myForm').validator()
 });
 
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
