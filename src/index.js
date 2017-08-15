@@ -8,6 +8,8 @@ import '../style/navbar.scss';
 
 $(document).ready(function() {
 
+    $('#myForm').validator()
+
     $("#home-button").click( function() {
         $('html, body').animate({
             scrollTop: $("#home-section").offset().top

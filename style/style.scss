@@ -19,6 +19,10 @@ img {
     padding: 15px 0 0px 0;
 }
 
+.title-contact {
+    padding-bottom: 30px;
+}
+
 .home {
     width: 100%;
     display: flex;
@@ -73,8 +77,6 @@ img {
     background: $color-black;
 
     .contact-project-container {
-        
-        padding-top: 30px;
     
         .form-container {
             width: 260px;
@@ -83,6 +85,7 @@ img {
             .form-style {
                 color: $color-txt-primary;
                 // font-family: var(--font);
+
                 .form-input {
                     background-color: $color-txt-lightgray;
                     border: solid 1px #6E6E6E;
@@ -92,8 +95,6 @@ img {
 
                 label {
                     width: 100%;
-                    padding-bottom: 10px;
-                    
                 }
 
                 .form-submit {
@@ -218,7 +219,7 @@ footer {
 @media(min-width:321px) {
 
     .contact-project-container {
-        padding: 30px 30px 0 30px;
+        padding: 0 30px 0 30px;
     }
 
     .contact-project-container-second {
